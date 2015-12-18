@@ -1,0 +1,33 @@
+/* 
+dk blue = #254655
+md blue = #75bfc7
+lt blue = #c4eef2
+*/
+
+body {
+	background-color: #254655;
+	font-family: sans-serif;
+}
+
+h1, h2 {
+	color: #75bfc7;
+	font-weight: 300;
+}
+
+h3 {
+	color: #ffaf45;
+	font-weight: 200;
+}
+
+p {
+	color: #ffffff;
+	font-weight: 100;
+}
+
+a:link {
+	color: #c4eef2;
+}
+
+a:visited {
+	color: #ffd284;
+}
