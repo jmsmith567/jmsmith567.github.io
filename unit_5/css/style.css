@@ -1,0 +1,136 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:900,400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700);
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Merriweather", serif;
+}
+
+header {
+	padding-left: 10px;
+	background-color: #333333;
+	width: 100%;
+	/* I don't understand why I seem to need this float but if I comment it out,
+	I get about 20 pixels of white space above the header...  Is it because
+	I'm using floats in other selectors so now every element needs to specify
+	a float behavior? */
+	float: left;
+	font-family: 'Merriweather Sans', sans-serif;
+	line-height: 5px;
+	text-align: center;
+}
+
+nav {
+	padding: 5px;
+	background-color: #666666;
+	width: 100%;
+	clear: left;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	word-spacing: 20px;
+
+}
+
+section.events {
+	padding: 10px;
+	/* I'm having trouble understanding how to determine widths and the browser is
+	handling the percentages I've specified...  The percent for my three columns
+	only equals 96% but if I try to make them total 100% the third column wraps?
+	*/
+	width: 25%;
+	/* If the content in this section (e.g. number of events) was going to be significantly
+	longer than the content in the middle and right columns, would using overflow: auto; be the 
+	preferred method for handling that? */
+	float: left;
+}
+
+section.member_images {
+	padding: 10px;
+	width: 55%;
+	float: left;
+}
+
+section.benefits {
+	padding: 10px;
+	/* If padding adds space around an element and margin adds space between elements
+	is there a preference as to which one should be used to position objects on the
+	page? */
+	margin-top: 50px;
+	width: 15%;
+	padding: 10px;
+	float: left;
+	font-size: 1.2em;
+}
+
+footer {
+	padding: 10px;
+	background-color: #333333;
+	clear: left;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: white;
+	text-align: center;
+	clear: left;
+}
+
+#wrapper {
+	/* What is the current preferred width if it should be specified at all? */
+	width: 1200px;
+}
+
+.section_title {
+	font-weight: 700;
+}
+
+h1.logo {
+	font-size: 3em;
+	color: #ffffff;
+}
+
+h2 {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	color: #333333; 
+	text-align: center;
+}
+
+h4.tagline {
+	font-style: italic;
+	/* Is using the letter spacing to try to get the width of the tagline
+	to match the width of the "logo" bad design? */
+	letter-spacing: 0.04em;
+	line-height: 10px;
+	color: #666666;
+}
+
+/* I put this font size in because the default font size seems really large - 
+I don't think I have any browser preferences that would override text size - 
+is this based on some other value I've specified or is it inherent in the web
+font I've chosen ?
+
+Also, it seems like the paragraph text in the 1st column is smaller than the paragraph
+text in the third column - is the <span> in the first column affecting the paragraph
+text in some way? */
+
+p, ul {
+	font-size: .65em;
+}
+
+a:link {
+	color: orange;
+	text-decoration: none;
+}
+
+a:visited {
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cccccc;
+	text-decoration: none;
+}
+
