@@ -1,0 +1,144 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:900,400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700);
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Merriweather", serif;
+}
+
+header {
+	padding: 5px 0 5px 25px;
+	text-align: left;
+	line-height: 5px;
+}
+
+nav {
+	background-color: #666666;
+	font-family: 'Merriweather Sans', sans-serif;
+	text-align: right;
+}
+
+section.member_images {
+	background-color: #000000;
+	width: 900px;
+	float: left;
+}
+
+section.information {
+	padding: 0 10px 5px 10px; 
+	background-color: #eeeeee;
+	width: 280px;
+	float: left;
+}
+
+figure {
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+footer {
+	padding: 10px;
+	background-color: #333333;
+	clear: left;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: white;
+	text-align: center;
+	clear: left;
+}
+
+#wrapper {
+	 width: 1200px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.news_title {
+	font-weight: 700;
+}
+
+h1.logo {
+	font-size: 3em;
+	color: #333333;
+}
+
+h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	font-weight: 700;
+	color: #333333; 
+}
+
+h4.tagline {
+	font-style: italic;
+	letter-spacing: 0.04em;
+	color: #666666;
+}
+
+p {
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: orange;
+	font-size: 12px;
+}
+
+a.primary {
+	padding: 5px 25px 5px 25px;
+	background-color: #666666;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+	float: left;
+}
+
+a.primary:hover {
+	background-color: orange;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333333;
+}
+
+/* BEGIN QUESTIONS *********************************
+
+1) What is the order for listing selectors in the stylesheet?
+
+2) What is the preferred method for setting the width of the page in the wrapper?
+
+3) What is the preferred method for setting the width of columns?  pixels or percents?  I've
+used pixels but I assume percents would be better?
+
+4) Are there any tools or shortcuts for doing the math on widths?
+
+5) If padding adds space around an element, and margin adds space between elements,
+is there a preference as to which one should be used to position objects on the
+page?
+
+6) If the content in the info column was going to be significantly
+longer than the image, what is the preferred method for
+handling that?
+
+7) Is using letter spacing in my 'h4.tagline' selector to make the width of the text match the
+width of the <h1> bad practice?
+
+8) I imported Merriweather and Merriweather Sans fonts from Google.  The default font sizes
+seemed really so I specified font size in most of my tags using pixels, would ems be better?
+
+9) Can we review the properties in the clearfix selector?
+
+END QUESTIONS ************************************ */
