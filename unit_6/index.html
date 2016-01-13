@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Portland Camera Club Demo Site</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -25,13 +26,14 @@
 
 	<section class="member_images">
 		<figure>
-			<img src="images/burke.jpg" alt="Girls walking across trains" title="Long High Jumps by Burke">
+			<img src="images/burke.jpg" width="840" alt="Girls walking across trains" title="Long High Jumps by Burke">
+			<figcaption>"Image Title", Submitted by Maker's Name</figcaption>
 		</figure>
 	</section>
 
 	 <section class="information">
 	 		<h2>Meetings</h2>
-	 		<p>We meet to display and discuss photography in a friendly atmosphere. Meetings are held on Mondays from September through May at the <a href="">Woodfords Club</a>, 179 Woodford Street in Portland.</p>
+	 		<p>We meet to display and discuss photography in a friendly atmosphere. Meetings are held on Mondays from September through May at the <a href="#">Woodfords Club</a>, 179 Woodford Street in Portland.</p>
 
 	 		<hr>
 
@@ -45,12 +47,46 @@
 
 			<hr>
 		
-			<h2>2015-16 Assigned Subjects</h2>
-			<p>
-			Motion Blur (12/7)<br>
-			Song Titles (1/11)<br>
-			Rain, Fog or Atmospheric Conditions (4/4)
-			</p>
+			<h2>Membership</h2>
+			<p>Visitors are always welcome. Anyone may participate, at no charge, in meetings during September and October. To continue participation in club activities, individuals must pay annual dues of $50.00 by the end of the first meeting in November.</p>
+
+			<a href="#">View payment methods</a>
+	</section>
+
+	<aside class="assignments">
+		<h2>Assigned Subjects</h2>
+
+		<p>Three times per year, subjects will be assigned for print and digital competitions. The assigned subjects for 2015-2016 are:</p>
+		
+		<p>
+		Motion Blur (12/7)<br>
+		Song Titles (1/11)<br>
+		Rain, Fog or Atmospheric Conditions (4/4)
+		</p>
+	</aside>
+
+	<section class="member_spotlight">
+		<h1>Member Spotlight: John Bald</h1> 
+
+		<table>
+			<tr>
+				<td class="right-align">Location:</td>
+				<td>Brunswick, Maine</td>
+			</tr>
+			<tr>
+				<td class="right-align">Photographic Interests:</td>
+				<td>Landscapes</td>
+			</tr>
+			<tr>
+				<td class="right-align">Gear:</td>
+				<td>Olympus OMD-EM10</td>
+			</tr>
+		</table>
+
+		<p class="quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+		<a href="#">View John's photography</a>
 	</section>
 
 	<footer>
@@ -62,23 +98,28 @@
 </body>
 </html>
 
+<!--  
 
+When I ran this page through the W3C validator I got 2 'info' notifications about content-type and schema...  Not sure what they meant?  Do 'info' messages in the W3C validator need to be addressed? 
 
+When I use the reset.css file none of the styles in my style.css stylesheet are applied
 
-<!-- BEGIN QUESTIONS ***************************
+Where can I find help on how to randomly rotate through a series of a dozen or so images on the homepage?  What's a good method for trying to do this - should the images all have the same dimensions?  What if they don't? 
 
-1) Which is preferred <br> or </br>?
+Does the text for a <figcaption> automatically align with the edge of the image?  It seems to be doing that here but I may also have some style applied somewhere and not realize it?
 
-2) What's the preferred method for bolding/emphasizing just a few words in a paragraph? I used <strong> since it was referenced in the lesson?? 
+The first time I tried using <figcaption>, Sublime didn't display it as an available element, but now that I've used it once it's presented as an option when I start to type <fi...  ?
 
-3) When I ran this page through the W3C validator I got 2 'info' notifications about content-type and schema...  not sure what they meant?
+Can I use multiple classes on a single element?  Is that bad practice?
 
-4) Do 'info' messages in the W3C validator need to be addressed?
+What's the preferred method for providing links to Google maps when you want to offer directions?
 
-5) Where could I find help on how to randomly rotate through a series of a dozen or so images on the homepage? And, what's a good method for trying to do this knowing if images sizes may vary?
+What is the preferred method for using symbols like copyright and ampersand in your content? 
 
-6) What's the preferred method for providing links to Google maps when you want to offer directions?
+Which is preferred <br> or </br>?
 
-7) Where can I find info on preferred ASCII characters for sybmols like ampersand and copyright?
+What's the preferred method for bolding/emphasizing just a few words in a paragraph? I wrapped text in <strong> since it was referenced in the lesson but that's not separating structure and style...
 
- END QUESTIONS ******************************** -->
+Is it still ok to use <table><tr><td> etc to format tabular data?
+
+ -->

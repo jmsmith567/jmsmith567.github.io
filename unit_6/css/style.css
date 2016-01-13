@@ -9,7 +9,7 @@ body {
 }
 
 header {
-	padding: 5px 0 5px 25px;
+	padding: 5px 0 5px 20px;
 	text-align: left;
 	line-height: 5px;
 }
@@ -17,31 +17,53 @@ header {
 nav {
 	background-color: #666666;
 	font-family: 'Merriweather Sans', sans-serif;
-	text-align: right;
 }
 
 section.member_images {
-	background-color: #000000;
-	width: 900px;
+	padding: 0 10px 10px 0;
+	margin: 0;
+	background-color: #FFB10D;
+	width: 70%;
 	float: left;
+	font-family: 'Merriweather San', sans-serif;
+	font-size: .85em;
 }
 
 section.information {
-	padding: 0 10px 5px 10px; 
+	padding: 0 20px; 
 	background-color: #eeeeee;
-	width: 280px;
+	width: 26%;
+	float: left;
+}
+
+section.member_spotlight {
+	padding: 10px 20px;
+	margin: 0;
+	background-color: #000000;
+	width: 64%;
+	float: right;
+	color: #ffffff;
+}
+
+aside.assignments {
+	padding: 10px 20px;
+	margin: 0;
+	background-color: #dddddd;
+	width: 30%;
+	clear: left;
 	float: left;
 }
 
 figure {
-	padding: 0px;
-	margin: 0px;
-	float: left;
+ 	margin: 0;
+ 	float: left;
+	font-family: 'Merriweather San', sans-serif;
+	text-align: right;
 }
 
 footer {
-	padding: 10px;
-	background-color: #333333;
+	padding: 5px;
+	background-color: #666666;
 	clear: left;
 	font-family: 'Merriweather Sans', sans-serif;
 	color: white;
@@ -50,7 +72,7 @@ footer {
 }
 
 #wrapper {
-	 width: 1200px;
+	 width: 100%;
 }
 
 .clearfix:after {
@@ -73,7 +95,6 @@ h1.logo {
 
 h2 {
 	font-family: 'Merriweather', serif;
-	font-size: 20px;
 	font-weight: 700;
 	color: #333333; 
 }
@@ -86,6 +107,18 @@ h4.tagline {
 
 p {
 	font-size: 12px;
+}
+
+p.quote {
+	font-style: italic;
+}
+
+td {
+	padding-right: 15px;
+}
+
+td.right-align{
+	text-align: right;
 }
 
 a {
@@ -105,7 +138,7 @@ a.primary {
 }
 
 a.primary:hover {
-	background-color: orange;
+	background-color: #FFBF5D;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -114,31 +147,38 @@ a:hover {
 	color: #333333;
 }
 
-/* BEGIN QUESTIONS *********************************
+/* 
 
-1) What is the order for listing selectors in the stylesheet?
+What is the preferred method for setting the width of the page in the wrapper?
 
-2) What is the preferred method for setting the width of the page in the wrapper?
+I can't get borders to display for any element? 
 
-3) What is the preferred method for setting the width of columns?  pixels or percents?  I've
-used pixels but I assume percents would be better?
+What is the order for listing selectors in the stylesheet? 
 
-4) Are there any tools or shortcuts for doing the math on widths?
-
-5) If padding adds space around an element, and margin adds space between elements,
+If padding adds space around an element, and margin adds space between elements,
 is there a preference as to which one should be used to position objects on the
-page?
+page? 
 
-6) If the content in the info column was going to be significantly
-longer than the image, what is the preferred method for
+What is the preferred method for setting the width of columns?  Pixels or %?
+
+If % is 'fluid', how do you do the math? 70% + 30% = 100% doesn't work if your 
+columns have padding... Seems like trial and error...  e.g. 70% + 26%? or 70 + 27%? 
+
+Can we review the properties in clearfix - I don't really understand what it's 
+doing?  
+
+Will the clearfix properties/values always be the same for this fix? 
+
+I seem to need margin: 0; on <figure> even though I put margin: 0; on
+section.member_images - I though <figure> would inherit the property from
+the section/class selector? 
+
+If the content in the section on the right was going to be significantly
+longer than the hero image to the left of it, what is the preferred method for
 handling that?
 
-7) Is using letter spacing in my 'h4.tagline' selector to make the width of the text match the
-width of the <h1> bad practice?
+Is using letter spacing on <h4.tagline> to make it the same width as the 
+<h1> text bad practice?
 
-8) I imported Merriweather and Merriweather Sans fonts from Google.  The default font sizes
-seemed really so I specified font size in most of my tags using pixels, would ems be better?
-
-9) Can we review the properties in the clearfix selector?
-
-END QUESTIONS ************************************ */
+I imported Merriweather and Merriweather Sans fonts from Google.  The default 
+font sizes seemed really big - can we review ems and font-sizing? */
