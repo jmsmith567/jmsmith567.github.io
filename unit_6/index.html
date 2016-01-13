@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Portland Camera Club Demo Site</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -24,12 +24,12 @@
 			<a href="#" class="primary">Become A Member</a>
 	</nav>
 
-	<section class="member_images">
-		<figure>
+	<!-- <section class="member_images"> -->
+		<figure class="member_images">
 			<img src="images/burke.jpg" width="840" alt="Girls walking across trains" title="Long High Jumps by Burke">
 			<figcaption>"Image Title", Submitted by Maker's Name</figcaption>
 		</figure>
-	</section>
+	<!-- </section> -->
 
 	 <section class="information">
 	 		<h2>Meetings</h2>
@@ -100,17 +100,34 @@
 
 <!--  
 
-When I ran this page through the W3C validator I got 2 'info' notifications about content-type and schema...  Not sure what they meant?  Do 'info' messages in the W3C validator need to be addressed? 
+Why does the first link need ../ but the second one doesn't?
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
-When I use the reset.css file none of the styles in my style.css stylesheet are applied
+How long would the reset.css file used in this class be valid, e.g. how long before a new best practice or method would make this invalid?  
+
+Which is preferred:
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+OR
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;   (sublime doesn't seem to recognize box-sizing??)
+}
+
+What is preferred:
+a) Using <main class="#wrapper"> to wrap all content and setting width etc on this element OR;
+b) using <div class="#wrapper">.... OR;
+c) none of the above...
 
 Where can I find help on how to randomly rotate through a series of a dozen or so images on the homepage?  What's a good method for trying to do this - should the images all have the same dimensions?  What if they don't? 
 
 Does the text for a <figcaption> automatically align with the edge of the image?  It seems to be doing that here but I may also have some style applied somewhere and not realize it?
 
 The first time I tried using <figcaption>, Sublime didn't display it as an available element, but now that I've used it once it's presented as an option when I start to type <fi...  ?
-
-Can I use multiple classes on a single element?  Is that bad practice?
 
 What's the preferred method for providing links to Google maps when you want to offer directions?
 
