@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:900,400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700);
 
+/*	I can't seem to get borders to display for any element that I try to put them? */
 
 body {
 	padding: 0;
@@ -9,6 +10,9 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
+/*	If padding adds space around an element, and margin adds space between elements,
+is there a preference as to which one should be used to position objects on the
+page? */
 header {
 	padding: 5px 0 5px 20px;
 	text-align: left;
@@ -19,6 +23,14 @@ nav {
 	background-color: #666666;
 	font-family: 'Merriweather Sans', sans-serif;
 }
+
+/*	1) What is the preferred method for setting the width of columns or containers?  Pixels or %?
+
+	2) If % is 'fluid', how do you do the math? 70% + 30% = 100% doesn't work if your 
+	columns have padding... Seems like trial and error...  e.g. 70% + 26%? or 70 + 27%? 
+
+	3) When does float right simply float an element to the right versus when it 
+	changes the order in which elements appear? */
 
 figure {
 	padding: 0 10px 10px 0;
@@ -45,6 +57,9 @@ footer {
 	clear: both;
 }
 
+/*	1) Can we review the properties in clearfix - I don't really understand what each of this properties is doing? 
+
+	2) Will the clearfix properties/values always be the same for this fix?*/
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -67,6 +82,11 @@ footer {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+/*	1) I seem to be missing the fix for how to make the background color in the club-info class fill the container?
+
+	2) If the content in this section was going to be significantly longer than the image to the left of it, what is the preferred method for
+	handling that - I wouldn't want a lot of empty space under the image */
 
 .club-info {
 	padding: 0 20px; 
@@ -106,7 +126,7 @@ footer {
 }
 
 
-
+/*	What is the preferred method for setting the width of the page in the wrapper? pixels or percents? */
 #wrapper {
 	 width: 100%;
 }
@@ -116,6 +136,7 @@ footer {
 	color: #333333;
 }
 
+/*	Is using letter spacing on this class to make this text the same width as the <h1> text bad practice? */
 #tagline {
 	font-style: italic;
 	letter-spacing: 0.04em;
@@ -128,6 +149,9 @@ h2 {
 	color: #333333; 
 }
 
+/* 1) I imported Merriweather and Merriweather Sans fonts from Google.  The default 
+font sizes seemed really big - can we review ems and font-sizing - I'm using a mix of both pixels 
+and ems and that's probably not a good idea? */
 p {
 	font-size: 12px;
 }
@@ -146,41 +170,7 @@ a:hover {
 	color: #333333;
 }
 
-/* 
 
-What is the preferred method for setting the width of the page in the wrapper?
 
-I can't get borders to display for any element? 
 
-What is the order for listing selectors in the stylesheet? 
 
-If padding adds space around an element, and margin adds space between elements,
-is there a preference as to which one should be used to position objects on the
-page? 
-
-What is the preferred method for setting the width of columns?  Pixels or %?
-
-If % is 'fluid', how do you do the math? 70% + 30% = 100% doesn't work if your 
-columns have padding... Seems like trial and error...  e.g. 70% + 26%? or 70 + 27%?
-
-When does float right simply float an element to the right versus when it 
-changes the order in which elements appear?
-
-Can we review the properties in clearfix - I don't really understand what it's 
-doing?  
-
-Will the clearfix properties/values always be the same for this fix? 
-
-I seem to need margin: 0; on <figure> even though I put margin: 0; on
-section.member_images - I though <figure> would inherit the property from
-the section/class selector? 
-
-If the content in the section on the right was going to be significantly
-longer than the hero image to the left of it, what is the preferred method for
-handling that?
-
-Is using letter spacing on <h4.tagline> to make it the same width as the 
-<h1> text bad practice?
-
-I imported Merriweather and Merriweather Sans fonts from Google.  The default 
-font sizes seemed really big - can we review ems and font-sizing? */

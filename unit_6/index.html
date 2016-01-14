@@ -2,11 +2,31 @@
 <html>
 <head>
 	<title>Portland Camera Club Demo Site</title>
-<!-- Why does the reset.css link seem to need ../ but style.css doesn't? -->
+
+<!-- 	1) Why does the reset.css link seem to need ../ but style.css doesn't?
+     
+		2) Which is preferred using reset.css or 
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box; 
+		}  
+
+		3) Sublime doesn't seem to recognize box-sizing unless I have the wrong property:value 
+
+		4) How long would the reset.css file used in this class be valid, e.g. how long before a new best practice or method would make this invalid? 
+ -->
+
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+<!--	What is preferred:
+		a) Using <main class="#wrapper"> to wrap all content and setting width etc on this element OR;
+		b) using <div class="#wrapper">.... OR;
+		c) none of the above... 
+-->
 
 <div id="wrapper">
 
@@ -25,20 +45,41 @@
 			<a href="#" class="primary">Become A Member</a>
 	</nav>
 
+<!-- 	1) Where can I find help on how to randomly rotate through a series of a dozen or so images where I've placed this figure?
+
+		2) Would <figure> work in that scenario?
+
+		3) What's a good method for trying to do this - should the images all have the same dimensions?  What if they don't?  
+-->
 
 	<figure>
 		<img src="images/burke.jpg" width="840" alt="Girls walking on top of trains" title="Image Title">
+
+<!--	1) Does the text for a <figcaption> automatically align with the edge of the image?  I wanted to align the caption to the right edge of the image
+		but it seems like the image and caption both have to be left or both have to be right?
+
+		2) The first time I tried using <figcaption>, Sublime didn't display it as an available element, but now that I've used it once it's presented as an option when I start to type <fi...  ?
+-->
 		<figcaption>"Image Title", Submitted by Maker's Name</figcaption>
 	</figure>
 
 	 <section class="club-info">
 	 		<h2>Meetings</h2>
+
+<!-- What's the preferred method for providing links to Google maps when you want to offer directions? -->
 	 		
 	 		<p>We meet to display and discuss photography in a friendly atmosphere. Meetings are held on Mondays from September through May at the <a href="#">Woodfords Club</a>, 179 Woodford Street in Portland.</p>
 
 	 		<hr>
 
+<!-- What is the preferred method for using symbols like copyright and ampersand in your content? -->
+
 			<h2>Club News &#38; Information</h2>
+
+<!-- 	1) Which is preferred <br> or </br>? 
+
+		2) What's the preferred method for bolding/emphasizing just a few words in a paragraph? I wrapped text in <strong> since it was referenced in the lesson but that's not separating structure and style...
+-->
 
 		 	<p><span class="news-title">Mon Jan 11 - 7 PM<br>Print Competition (Assigned Subject: Song Title)</span><br>Two prints per member. Please note: this competition has an assigned subject so all entries must have been taken <strong>after May 18, 2015</strong>. The deadline for bringing in your prints is Jan 4th.</p>
 
@@ -69,6 +110,8 @@
 	<section class="member-spotlight">
 		<h1>Member Spotlight: John Bald</h1> 
 
+<!-- Is it still ok to use <table><tr><td> etc to format tabular data? -->
+
 		<table>
 			<tr>
 				<td class="right-align">Located in:</td>
@@ -98,44 +141,3 @@
 
 </body>
 </html>
-
-<!--  
-
-
-
-How long would the reset.css file used in this class be valid, e.g. how long before a new best practice or method would make this invalid?  
-
-Which is preferred:
-<link rel="stylesheet" type="text/css" href="../css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-
-OR
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;   (sublime doesn't seem to recognize box-sizing??)
-}
-
-What is preferred:
-a) Using <main class="#wrapper"> to wrap all content and setting width etc on this element OR;
-b) using <div class="#wrapper">.... OR;
-c) none of the above...
-
-Where can I find help on how to randomly rotate through a series of a dozen or so images on the homepage?  What's a good method for trying to do this - should the images all have the same dimensions?  What if they don't? 
-
-Does the text for a <figcaption> automatically align with the edge of the image?  It seems to be doing that here but I may also have some style applied somewhere and not realize it?
-
-The first time I tried using <figcaption>, Sublime didn't display it as an available element, but now that I've used it once it's presented as an option when I start to type <fi...  ?
-
-What's the preferred method for providing links to Google maps when you want to offer directions?
-
-What is the preferred method for using symbols like copyright and ampersand in your content? 
-
-Which is preferred <br> or </br>?
-
-What's the preferred method for bolding/emphasizing just a few words in a paragraph? I wrapped text in <strong> since it was referenced in the lesson but that's not separating structure and style...
-
-Is it still ok to use <table><tr><td> etc to format tabular data?
-
- -->
