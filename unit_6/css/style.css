@@ -125,6 +125,12 @@ footer {
 	font-style: italic;
 }
 
+.on-black {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	color: #ffffff;
+}
+
 
 /*	What is the preferred method for setting the width of the page in the wrapper? pixels or percents? */
 #wrapper {
