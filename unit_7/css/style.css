@@ -70,6 +70,15 @@ footer {
 	float: left;
 }
 
+.primary-selected {
+	padding: 5px 25px 5px 25px;
+	background-color: purple;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	float: left;
+}
+
 .primary:hover {
 	background-color: #FFBF5D;
 	color: #fff;
