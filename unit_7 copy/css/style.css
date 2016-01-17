@@ -1,0 +1,196 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:900,400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+body {
+	font-family: 'Merriweather', serif;
+}
+
+header {
+	padding: 15px 0 15px 20px;
+	font-family: 'Merriweather', serif;
+	text-align: left;
+}
+
+nav {
+
+	background-color: #333;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+figure {
+	margin: 0;
+	width: 70%;
+	background-color: #FFB10D;
+}
+
+figcaption {
+	padding: 0 0 5px 0;
+	font-family: 'Merriweather Sans', sans-serif;
+	text-align: center;
+	font-size: .75em;
+}
+
+aside {
+	padding: 10px 20px;
+	width: 30%; 
+}
+
+section {
+	padding: 10px 20px;
+	width: 70%; 
+}
+
+footer {
+	padding: 5px;
+	background-color: #666;
+	clear: left;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: .75em;
+	color: white;
+	text-align: center;
+	clear: both;
+}
+
+/* I put my classes in alpha order to make it easier to find them -
+   is that an acceptable practice? */
+
+.bold {
+	font-weight: 700;
+}
+
+.blackbg {
+	background-color: #000;
+	color: #fff;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.graybg {
+	background-color: #eee;
+	color: #333;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.label {
+	padding: 15px;
+	float: left;
+	text-align: right;
+	width: 20%;
+}
+
+.nav {
+	padding: 5px 25px 5px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: .85em;
+	float: left;
+}
+
+.nav:hover {
+	background-color: #FFBF5D;
+	color: #333;
+	text-decoration: none;
+}
+
+.nav-selected {
+	padding: 5px 25px 5px 20px;
+	background-color: #FFBF5D;
+	color: #333;
+	text-decoration: none;
+	font-size: .85em;
+	float: left;
+}
+
+.tagline {
+	font-style: italic;
+	letter-spacing: 0.04em;
+	color: #666;
+}
+
+.value {
+	padding: 15px;
+	float: right;
+	text-align: left;
+	width: 80%
+}
+
+.white-text {
+	color: #fff;
+}
+
+#wrapper {
+	 width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #FF740D;
+}
+
+a:hover {
+	color: #333;
+}
+
+h1 {
+	font-size: 3em;
+	color: #333;
+}
+
+h2 {
+	padding: 10px 0 10px 0;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	color: #333; 
+}
+
+/*h3 {
+	display: block;
+	clear: both;
+}*/
+
+p, ul {
+	font-size: .85em;
+	padding-bottom: 15px;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+li {
+	padding: 5px 0 5px 0;
+}
+
+
+
+
+
