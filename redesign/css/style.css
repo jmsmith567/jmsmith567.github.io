@@ -18,8 +18,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 header {
@@ -32,7 +31,6 @@ nav {
 
 	background-color: #EB7F00;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
 	font-weight: 400;
 }
 
@@ -46,11 +44,9 @@ aside {
 
 figure {
 	padding: 2px 2px 5px 2px;
-	border: 1px solid #000;
 	margin: 1%;
 	width: 31%;
 	background-color: #000;
-	/*overflow: hidden;*/
 }
 
 figcaption {
@@ -61,17 +57,16 @@ footer {
 	padding: 10px;
 	background-color: #EB7F00;
 	clear: both;
-	/*font-family: 'Merriweather Sans', sans-serif;*/
 	font-size: .85em;
 	color: #fff;
 	text-align: center;
 }
 
-/* Is there a best practice for listing classes? Alpha? I grouped them by
-function and added comments to the groups? */
+/* Is there a best practice for listing classes? Should they be in some kind of
+order? I grouped them by function and added comments to the groups? */
 
 
-/* Text Styles */
+/* ------- Text Styles -------- */
 .bold {
 	font-weight: 700;
 }
@@ -84,6 +79,10 @@ function and added comments to the groups? */
 	font-style: italic;
 }
 
+.padding {
+	padding: 5px;
+}
+
 .tagline {
 	font-style: italic;
 	letter-spacing: 0.04em;
@@ -91,7 +90,7 @@ function and added comments to the groups? */
 }
 
 
-/* Backgrounds */
+/* ------- Backgrounds -------- */
 .bluebg {
 	background-color: #225378;
 	color: #fff;
@@ -102,18 +101,13 @@ function and added comments to the groups? */
 	color: #fff;
 }
 
-.graybg {
-	background-color: #eee;
-	color: #333;
-}
-
 .tealbg {
 	background-color: #ACF0F2;
 	color: #225378;
 }
 
 
-/* Content Blocks */
+/* ------- Content Blocks -------- */
 
 .smblock {
 	margin: 1%;
@@ -125,7 +119,7 @@ function and added comments to the groups? */
 	color: #FFF;
 }
 
-.medblock {
+.mdblock {
 	margin: 1%;
 	padding: 10px;
 	width: 48%;
@@ -138,7 +132,7 @@ function and added comments to the groups? */
 }
 
 
-/* Image Styles*/
+/* -------- Image Styles ------- */
 .hero {
 	margin: 0;
 	padding: 0;
@@ -149,7 +143,7 @@ function and added comments to the groups? */
 }
 
 
-/* Float and Clear */
+/* ------- Float and Clear ------- */
 .clear {
 	clear: both;
 }
@@ -172,7 +166,7 @@ function and added comments to the groups? */
 }
 
 
-/* Tabular Data */
+/* ------- Tabular Data ------- */
 .label {
 	padding: 5px;
 	float: left;
@@ -182,16 +176,16 @@ function and added comments to the groups? */
 
 .value {
 	padding: 5px;
-	float: right;
+	float: left;
 	width: 75%
 }
 
-/* Navigation */
+/* ------- Navigation ------- */
 .nav {
 	padding: 5px 25px 5px 20px;
 	color: #FFF;
 	text-decoration: none;
-	font-size: .85em;
+	/*font-size: .85em;*/
 	float: left;
 }
 
@@ -206,10 +200,12 @@ function and added comments to the groups? */
 	background-color: #225378;
 	color: #fff;
 	text-decoration: none;
-	font-size: .85em;
+	/*font-size: .85em;*/
 	float: left;
 }
 
+
+/* ------ Other ------ */
 
 #wrapper {
 	 width: 100%;
@@ -246,6 +242,10 @@ ul {
 
 li {
 	padding: 5px 0 5px 0;
+}
+
+img {
+	max-width: 100%;
 }
 
 
