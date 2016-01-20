@@ -18,6 +18,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 	font-weight: 300;
 }
 
@@ -28,15 +29,12 @@ header {
 }
 
 nav {
-
 	background-color: #EB7F00;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
 }
 
 aside {
-	margin: 1%;
-	padding: 10px;
+	margin: 2% 1%;
+	padding: 20px;
 	width: 31%;
 	background-color: #ACF0F2;
 	color: #225378;
@@ -45,7 +43,7 @@ aside {
 figure {
 	padding: 2px 2px 5px 2px;
 	margin: 1%;
-	width: 31%;
+	width: 31.33%;
 	background-color: #000;
 }
 
@@ -110,25 +108,25 @@ order? I grouped them by function and added comments to the groups? */
 /* ------- Content Blocks -------- */
 
 .smblock {
-	margin: 1%;
+	margin: 2% 1%;
 	padding: 10px;
-	width: 31%;
-	height: 300px;
+	width: 31.33%;
+	height: 310px;
 	overflow: auto;
 	background-color: #225378;
 	color: #FFF;
 }
 
 .mdblock {
-	margin: 1%;
-	padding: 10px;
+	margin: 2% 1%;
+	padding: 20px;
 	width: 48%;
 }
 
 .lgblock {
 	margin: 1%;
 	padding: 10px;
-	width: 65%;
+	width: 64.67%;
 }
 
 
@@ -185,7 +183,6 @@ order? I grouped them by function and added comments to the groups? */
 	padding: 5px 25px 5px 20px;
 	color: #FFF;
 	text-decoration: none;
-	/*font-size: .85em;*/
 	float: left;
 }
 
@@ -200,7 +197,6 @@ order? I grouped them by function and added comments to the groups? */
 	background-color: #225378;
 	color: #fff;
 	text-decoration: none;
-	/*font-size: .85em;*/
 	float: left;
 }
 
@@ -233,7 +229,7 @@ h2 {
 
 
 p, ul {
-	padding-bottom: 15px;
+	padding-bottom: 1em;
 }
 
 ul {
@@ -241,7 +237,8 @@ ul {
 }
 
 li {
-	padding: 5px 0 5px 0;
+	padding: .5em 0 .5em 2em;
+	text-indent: -1em;
 }
 
 img {
