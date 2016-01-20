@@ -1,0 +1,254 @@
+/* color palette:
+	#225378 blue
+	#1695A3 teal
+	#ACF0F2 light teal
+	#EB7F00 orange
+	#EBA600 lt orange
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:900,400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+header {
+	padding: 15px 0 15px 20px;
+	font-family: 'Merriweather', serif;
+	text-align: left;
+}
+
+nav {
+
+	background-color: #EB7F00;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+aside {
+	margin: 1%;
+	padding: 10px;
+	width: 31%;
+	background-color: #ACF0F2;
+	color: #225378;
+}
+
+figure {
+	padding: 2px 2px 5px 2px;
+	border: 1px solid #000;
+	margin: 1%;
+	width: 31%;
+	background-color: #000;
+	/*overflow: hidden;*/
+}
+
+figcaption {
+	color: #FFF;
+}
+
+footer {
+	padding: 10px;
+	background-color: #EB7F00;
+	clear: both;
+	/*font-family: 'Merriweather Sans', sans-serif;*/
+	font-size: .85em;
+	color: #fff;
+	text-align: center;
+}
+
+/* Is there a best practice for listing classes? Alpha? I grouped them by
+function and added comments to the groups? */
+
+
+/* Text Styles */
+.bold {
+	font-weight: 700;
+}
+
+.center {
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.tagline {
+	font-style: italic;
+	letter-spacing: 0.04em;
+	color: #1695A3;
+}
+
+
+/* Backgrounds */
+.bluebg {
+	background-color: #225378;
+	color: #fff;
+}
+
+.blackbg {
+	background-color: #000;
+	color: #fff;
+}
+
+.graybg {
+	background-color: #eee;
+	color: #333;
+}
+
+.tealbg {
+	background-color: #ACF0F2;
+	color: #225378;
+}
+
+
+/* Content Blocks */
+
+.smblock {
+	margin: 1%;
+	padding: 10px;
+	width: 31%;
+	height: 300px;
+	overflow: auto;
+	background-color: #225378;
+	color: #FFF;
+}
+
+.medblock {
+	margin: 1%;
+	padding: 10px;
+	width: 48%;
+}
+
+.lgblock {
+	margin: 1%;
+	padding: 10px;
+	width: 65%;
+}
+
+
+/* Image Styles*/
+.hero {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+
+/* Float and Clear */
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.fltleft {
+	float: left;	
+}
+
+.fltright {
+	float: right;
+}
+
+
+/* Tabular Data */
+.label {
+	padding: 5px;
+	float: left;
+	width: 25%;
+	text-align: right;
+}
+
+.value {
+	padding: 5px;
+	float: right;
+	width: 75%
+}
+
+/* Navigation */
+.nav {
+	padding: 5px 25px 5px 20px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: .85em;
+	float: left;
+}
+
+.nav:hover {
+	background-color: #225378;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-selected {
+	padding: 5px 25px 5px 20px;
+	background-color: #225378;
+	color: #fff;
+	text-decoration: none;
+	font-size: .85em;
+	float: left;
+}
+
+
+#wrapper {
+	 width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #EB7F00;
+}
+
+a:hover {
+	color: #333;
+}
+
+h1 {
+	font-size: 3em;
+	color: #225378;
+}
+
+h2 {
+	padding: 10px 0 10px 0;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+}
+
+
+p, ul {
+	padding-bottom: 15px;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+li {
+	padding: 5px 0 5px 0;
+}
+
+
+
+
+
