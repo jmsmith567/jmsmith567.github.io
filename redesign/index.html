@@ -8,8 +8,8 @@
 
 <div id="wrapper">
 
-<!-- 	1) I check each page with the W3C validator and I'm not getting any
-		errors but I'm not sure I'm using the semantic tags correctly - specifically <section> <div> <aside>
+<!-- 	I check each page with the W3C validator and I'm not getting any
+		errors but I'm not sure I'm using the semantic tags correctly - especially  <section> and <div>
 -->
 
 	<header>
@@ -29,16 +29,23 @@
 	</nav>
 
 <!--    1) At the top of each page I want a hero image beneath the nav with a 
-		height of 400px. I created .hero with height:400px and overflow: hidden but now my captions for these images don't display.
+		height of 400px. I created class .hero with height:400px and overflow: hidden but now my captions for these images don't display.
 
-		2) If I'm only going to use .hero once per page should it an ID instead
+		2) If I'm only going to use .hero once per page should it be an ID instead
 		of a class?
-  -->
+-->
 
 	<figure class="hero">
 		<img src="images/barharbor2015-2.jpg" alt="Adirondack chairs on a deck" title="Table For Two">
 		<figcaption>"Table For Two", Joanne Smith/figcaption>
 	</figure>
+
+<!-- 	1) I'm curious about whether the approach I've taken here is good practice?
+		I'm using classes for floating, clearing, and styling content blocks 
+
+		2) I've specified a height for .smblock rather than just having them size to the height of the content, just curious about that approach 
+
+		3) I know white text can be hard to read - just wanted to get your thoughts about readability for the style I've chosen here -->
 
 	<main>
 		<div class="fltleft smblock">
@@ -67,30 +74,44 @@
 		</div>
 	</main>
 
-	<figure class="clear fltleft">
-		<img src="images/gull-on-pier.jpg" alt="Seagull on pier" title="On The Waterfront">
-		<figcaption>"On The Waterfront", Joanne Smith</figcaption>	
-	</figure> 
+	<section class="clear fltleft mdblock tealbg">
+		<h2>January Member Profile: Joanne Smith</h2>
 
-	<section class="fltleft lgblock blackbg">
-		<h2>Member Profile: Joanne Smith</h2>
-
-		<div class="label">
+		<div class="label bold">
 			<p>Located in:</p>
+		</div>
+
+		<div class="value">
+			<p>Portland, Maine</p>
+		</div>
+
+		<div class="label bold">
 			<p>Interests:</p>
+		</div>
+
+		<div class="value">
+			<p>Landscapes, street, black and white, iphoneography, Maine Coastal towns (e.g. Bar Harbor, Camden, Rockland, and Kennebunkport)</p>
+		</div>
+
+		<div class="label bold">
 			<p>Gear and Tools:</p>
 		</div>
 
 		<div class="value">
-				<p>Portland, Maine</p>
-				<p>Landscapes, street, black and white, iphoneography, Maine Coastal towns (e.g. Bar Harbor, Camden, Rockland, and Kennebunkport)</p>
-				<p>Panasonic Lumix DMC-GX7 and iPhone 6 Plus, Adobe Photoshop and Lightroom CC, Snapseed, Vividhdr and TouchRetouch</p>
+			<p>Panasonic Lumix DMC-GX7 and iPhone 6 Plus, Adobe Photoshop and Lightroom CC, Snapseed, Vividhdr and TouchRetouch</p>
 		</div>
 
-		<p class="clear italic">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p class="italic">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 		<p><a href="#">&#62; View Joanne's photography</a></p>
 	</section>
+
+	<figure class="fltright image30">
+		<img src="images/gull-on-pier.jpg" alt="Seagull on pier" title="On The Waterfront">
+		<figcaption>"On The Waterfront", Joanne Smith</figcaption>	
+	</figure> 
+
+
 	
 	<footer>
 		<p>&copy; Portland Camera Club.  Note: each photograph displayed on this web site is copyrighted by the photographer and may not be used or reproduced without specific, written permission from the photographer.</p>
