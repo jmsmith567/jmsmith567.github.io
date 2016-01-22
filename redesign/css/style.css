@@ -23,7 +23,6 @@ body {
 
 header {
 	padding: 15px 0 15px 20px;
-	font-family: 'Merriweather', serif;
 	text-align: left;
 }
 
@@ -31,25 +30,31 @@ nav {
 	background-color: #EB7F00;
 }
 
+/*section {
+	clear: both;
+}*/
+
 aside {
-	margin: 2%;
+	margin: 1.66%;
 	padding: 20px;
 	width: 30%;
-	max-height: 60em;
-	overflow-y: auto;
-	background-color: #ACF0F2;
-	color: #225378;
+	float: left;
+}
+
+article {
+	margin: 0.5% 1.66%;
+	width: 40%;
+	padding: 20px;
+	float: left;
 }
 
 figure {
-	padding: 2px 2px 5px 2px;
-	margin: 2.5%;
-	width: 60%;
 	background-color: #000;
 }
 
 figcaption {
 	color: #FFF;
+	font-size: .75em;
 	padding-left: 3px;
 }
 
@@ -111,40 +116,36 @@ order? I grouped them by function and added comments to the groups? */
 	color: #225378;
 }
 
+.orangebg {
+	background-color: #EBA600;
+	color: #225378;
+}
+
 
 /* ------- Content Blocks -------- */
 
 .smblock {
-    margin: 2%;
-    padding: 15px;
-    width: 29.33%;
-    height: 275px;
-    overflow-y: auto;
+    margin: 1.66%;
+    padding: 20px;
+    width: 20%;
     background-color: #225378;
-    color: #FFF;
+    color: white;
+    font-size: .90em;
+    float: left;
 }
 
-.mdblock {
+/*.mdblock {
 	margin: 2%;
 	padding: 20px;
 	width: 62%;
 }
 
-/*.lgblock {
+.lgblock {
 	margin: 1%;
 	padding: 15px;
 	width: 64.67%;
-}*/
-
-.image30 {
-	margin: 2%;
-	width: 30%;
 }
-
-.image60 {
-	margin: 2%;
-	width: 60%;
-}
+*/
 
 
 /* -------- Image Styles ------- */
@@ -153,7 +154,7 @@ order? I grouped them by function and added comments to the groups? */
 	padding: 0;
 	border: 0;
 	width: 100%;
-	height: 350px;
+	height: 375px;
 	overflow: hidden;
 }
 
@@ -218,6 +219,7 @@ order? I grouped them by function and added comments to the groups? */
 }
 
 
+
 /* ------ Other ------ */
 
 #wrapper {
@@ -229,8 +231,16 @@ a {
 	color: #EB7F00;
 }
 
+a.bluebg {
+	color: #ACF0F2;
+}
+
 a:hover {
 	color: #333;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -239,22 +249,42 @@ h1 {
 }
 
 h2 {
-	padding-bottom: 5px;
-	font-family: 'Merriweather', serif;
+	font-size: 2em;
+	color: #225378;
+}
+
+h2, h3, h4 {
+	padding-bottom: 15px;
+}
+
+hr {
+	margin: auto;
+	margin-bottom: 2px;
+	border: none;
+	width: 98%;
+	height: .25em;
+	background-color: #EB7F00;
 }
 
 
-p, ul {
+p {
+	line-height: 1.5em;
 	padding-bottom: 1em;
 }
 
 ul {
 	list-style-position: inside;
+    padding: 0 0 .5em 1em;
+    text-indent: -1em;
 }
 
 li {
-	padding: .5em 0 .5em 2em;
-	text-indent: -1em;
+	padding: .20em;
+}
+
+li.unstyled {
+	padding: .20em;
+	list-style-type: none;
 }
 
 img {
