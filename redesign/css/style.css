@@ -30,32 +30,29 @@ nav {
 	background-color: #EB7F00;
 }
 
-/*section {
-	clear: both;
-}*/
-
 aside {
-	margin: 1.66%;
+	margin: 2.5%;
 	padding: 20px;
 	width: 30%;
+	/*background-color: #ACF0F2;*/
 	float: left;
 }
 
 article {
-	margin: 0.5% 1.66%;
+	margin: 2.5% 0 1% 0 ;
 	width: 40%;
-	padding: 20px;
 	float: left;
 }
 
 figure {
+	border: 1px solid #000;
 	background-color: #000;
 }
 
 figcaption {
 	color: #FFF;
 	font-size: .75em;
-	padding-left: 3px;
+	padding: 2px;
 }
 
 footer {
@@ -67,25 +64,14 @@ footer {
 	text-align: center;
 }
 
-/* Is there a best practice for listing classes? Should they be in some kind of
-order? I grouped them by function and added comments to the groups? */
-
 
 /* ------- Text Styles -------- */
 .bold {
 	font-weight: 600;
 }
 
-.center {
-	text-align: center;
-}
-
 .italic {
 	font-style: italic;
-}
-
-.padding {
-	padding: 5px;
 }
 
 .tagline {
@@ -95,20 +81,9 @@ order? I grouped them by function and added comments to the groups? */
 }
 
 
-/* ------- Backgrounds -------- */
+/* ------- White Text On Dark Backgrounds -------- */
 .bluebg {
-	background-color: #225378;
 	color: #fff;
-}
-
-.blackbg {
-	background-color: #000;
-	color: #fff;
-}
-
-.dktealbg {
-	background-color: #1695A3;
-	color: #225378;
 }
 
 .tealbg {
@@ -116,16 +91,11 @@ order? I grouped them by function and added comments to the groups? */
 	color: #225378;
 }
 
-.orangebg {
-	background-color: #EBA600;
-	color: #225378;
-}
-
 
 /* ------- Content Blocks -------- */
 
 .smblock {
-    margin: 1.66%;
+    margin: 2.5%;
     padding: 20px;
     width: 20%;
     background-color: #225378;
@@ -134,18 +104,26 @@ order? I grouped them by function and added comments to the groups? */
     float: left;
 }
 
-/*.mdblock {
-	margin: 2%;
-	padding: 20px;
-	width: 62%;
+.mdblock {
+    margin: 1.66%;
+    padding: 20px;
+    width: 30%;
+    height: 260px;
+    background-color: #225378;
+    color: white;
+    font-size: .90em;
+    float: left;
 }
 
 .lgblock {
-	margin: 1%;
-	padding: 15px;
-	width: 64.67%;
+    margin: 2.5%;
+    padding: 20px;
+    width: 60%;
+  /*  background-color: #225378;
+    color: white;*/
+    font-size: .90em;
+    float: left;
 }
-*/
 
 
 /* -------- Image Styles ------- */
@@ -160,9 +138,6 @@ order? I grouped them by function and added comments to the groups? */
 
 
 /* ------- Float and Clear ------- */
-.clear {
-	clear: both;
-}
 
 .clearfix:after {
 	visibility: hidden;
@@ -173,14 +148,6 @@ order? I grouped them by function and added comments to the groups? */
 	height: 0;
 }
 
-.fltleft {
-	float: left;	
-}
-
-.fltright {
-	float: right;
-}
-
 
 /* ------- Tabular Data ------- */
 .label {
@@ -188,6 +155,7 @@ order? I grouped them by function and added comments to the groups? */
 	float: left;
 	width: 25%;
 	text-align: right;
+	font-weight: 700;
 }
 
 .value {
@@ -239,7 +207,7 @@ a:hover {
 	color: #333;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Merriweather', serif;
 }
 
@@ -258,12 +226,11 @@ h2, h3, h4 {
 }
 
 hr {
+	padding: 0;
 	margin: auto;
-	margin-bottom: 2px;
 	border: none;
+    border-top: medium double #EB7F00;
 	width: 98%;
-	height: .25em;
-	background-color: #EB7F00;
 }
 
 
