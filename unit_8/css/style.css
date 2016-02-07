@@ -16,37 +16,52 @@
 }
 
 body {
-	margin: auto;
+	/*margin: auto;*/
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 }
 
-article {
+/*article {
 	margin: 0 5%;
 	width: 45%;
 	float: left;
+}*/
+
+article {
+    margin: 2%;
+    width: 54%;
+    float: left;
 }
 
-aside {
+/*aside {
 	margin: 0 5%;
     padding: 1em;
     width: 35%;
     background-color: #333;
     color: #FFF;
     float: left;
+}*/
+
+aside {
+    margin: 2%;
+    padding: 1em;
+    width: 38%;
+    background-color: #333;
+    color: #CCC;
+    float: left;
 }
 
 aside h2 {
-	color: #FFF;
+	color: #CCC;
 }
 
 aside h3 {
-	color: #FFF;
+	color: #CCC;
 }
 
 aside a {
-    color: #ACF0F2;
+    color: #EBA600;
     display: block;
 }
 
@@ -97,8 +112,6 @@ header h4 {
 }
 
 nav {
-	margin: auto;
-	padding-left: 1em;
 	padding-top: 1.75em;
 	width: 16%;
 	height: 375px;
@@ -115,16 +128,27 @@ nav a {
 
 nav a:hover {
 	background-color: #225378;
-	color: #EB7F00;
+	color: #ACF0F2;
 }
+
+/*section {
+	padding: 1em 0;
+}*/
 
 section {
-	padding: 1em 0;
+    margin: 1% auto;
+    width: 85%;
+    /*padding: 1em 0;*/
 }
 
+/*section.full-width {
+	width:100%;
+}*/
+
 .active {
-	color: #EB7F00;
+	color: #ACF0F2;
 }
+
 
 .bold {
 	font-weight: 600;
@@ -179,7 +203,7 @@ section {
 .horz-nav {
 	margin:auto;
 	padding: 0 1em;
-	width: 90%;
+	width: 96%;
 	background-color: #EBA600;
 	color: #FFF;
 }
@@ -189,7 +213,7 @@ section {
 }
 
 .label {
-    width: 20%;
+    width: 25%;
     font-weight: 700;
     float: left;
 }
@@ -197,12 +221,12 @@ section {
 .value {
 	/*padding-left: 1.5em;*/
 	float: left;
-	width: 80%
+	width: 75%
 }
 
 #wrapper {
 	 width: 100%;
-	 margin: auto;
+	 /*margin: auto;*/
 }
 
 a {
@@ -223,7 +247,7 @@ div.event {
 	min-height: 5em;
 }
 
-h1, /*h2, h3, */h4, h5, h6 {
+h1 {
 	font-family: 'Merriweather', serif;
 }
 
@@ -247,19 +271,18 @@ hr {
 	margin: 1em auto;
 	border: none;
     border-top: medium double #EB7F00;
-	width: 98%;
+	width: 93%;
 }
-
 
 p {
 	line-height: 1.5em;
 	padding-bottom: 1em;
 }
 
-ul {
-	list-style-position: inside;
-    padding: 0 0 .5em 1em;
-    text-indent: -1em;
+ul, ol {
+	padding-left: 2em;
+    padding-bottom: 1em;
+    text-indent: 0;
 }
 
 ul.calendar {
@@ -267,8 +290,8 @@ ul.calendar {
 }
 
 li {
-	padding: .5em;
-	list-style-type: none;
+	padding: .4em;
+	/*list-style-type: none;*/
 }
 
 li.calendar {
