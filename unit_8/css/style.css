@@ -16,17 +16,11 @@
 }
 
 body {
-	/*margin: auto;*/
+	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 }
-
-/*article {
-	margin: 0 5%;
-	width: 45%;
-	float: left;
-}*/
 
 article {
     margin: 2%;
@@ -34,21 +28,13 @@ article {
     float: left;
 }
 
-/*aside {
-	margin: 0 5%;
-    padding: 1em;
-    width: 35%;
-    background-color: #333;
-    color: #FFF;
-    float: left;
-}*/
-
 aside {
     margin: 2%;
     padding: 1em;
     width: 38%;
     background-color: #333;
     color: #CCC;
+    border-radius: 1em;
     float: left;
 }
 
@@ -84,8 +70,18 @@ figcaption {
 	right:0;
 }
 
+figcaption.hero {
+	background-color:#000;
+	color: #FFF;
+	font-size: .75em;
+	padding: .5em;
+	position:absolute;
+	top:30em;
+	right:0;
+}
+
 footer {
-	padding: 1em;
+	padding: .5em;
 	background-color: #EB7F00;
 	clear: both;
 	font-size: .85em;
@@ -107,55 +103,42 @@ header h1 {
 header h4 {
 	font-style: italic;
 	font-size: 1em;
-	letter-spacing: 0.14em;
+	letter-spacing: 0.15em;
 	color: #1695A3;
 }
 
 nav {
-	padding-top: 1.75em;
-	width: 16%;
-	height: 375px;
-	float: left;
-	background-color: #225378;
+	padding: .5em 1em;
+	background-color: #EB7F00;
 }
 
 nav a {
-	padding:.75em;
+	padding: .5em 1em;
 	color: #FFF;
 	text-decoration: none;
-	display: block;
 }
 
 nav a:hover {
-	background-color: #225378;
-	color: #ACF0F2;
+	color: #225378;
 }
-
-/*section {
-	padding: 1em 0;
-}*/
 
 section {
     margin: 1% auto;
     width: 85%;
-    /*padding: 1em 0;*/
 }
-
-/*section.full-width {
-	width:100%;
-}*/
 
 .active {
+	
+	background-color: #225378;
 	color: #ACF0F2;
 }
-
 
 .bold {
 	font-weight: 600;
 }
 
-.calendar-nav {
-	padding: 0 1em;
+.cal-nav {
+	padding: .2em .5em;
 	width: 100%;
 	background-color: #EBA600;
 	color: #FFF;
@@ -194,18 +177,22 @@ section {
 .hero {
 	margin: 0;
 	padding: 0;
-	width: 84%;
-	height: 375px;
+	width: 100%;
+	height: 24em;
 	overflow: hidden;
-	float: left;
 }
 
 .horz-nav {
-	margin:auto;
-	padding: 0 1em;
-	width: 96%;
+	padding: .2em .8em;
+	width: 100%;
 	background-color: #EBA600;
 	color: #FFF;
+}
+
+.horz-nav-disab {
+	padding: .2em .5em;
+	pointer-events: none;
+	color: #999;
 }
 
 .italic {
@@ -213,20 +200,18 @@ section {
 }
 
 .label {
-    width: 25%;
+    width: 30%;
     font-weight: 700;
     float: left;
 }
 
 .value {
-	/*padding-left: 1.5em;*/
 	float: left;
-	width: 75%
+	width: 70%
 }
 
 #wrapper {
 	 width: 100%;
-	 /*margin: auto;*/
 }
 
 a {
@@ -271,7 +256,7 @@ hr {
 	margin: 1em auto;
 	border: none;
     border-top: medium double #EB7F00;
-	width: 93%;
+	width: 98%;
 }
 
 p {
@@ -291,41 +276,44 @@ ul.calendar {
 
 li {
 	padding: .4em;
-	/*list-style-type: none;*/
 }
 
 li.calendar {
 	display: inline;
 }
 
-li.unstyled {
-	padding: .20em;
-	list-style-type: none;
-}
-
-
 img {
 	max-width: 100%;
+	max-height: 100%;
 }
 
-/*.col20 {
-	margin: 1.66%;
-    padding: 1em;
-    width: 20%;
-    float: left;
+@media only screen and (max-width: 1125px) {
+	body {
+		font-size: 14px;
+	}
 }
 
-.col35 {
-    margin-left: 5%;
-    width: 35%;
-    float: left;
+@media only screen and (max-width: 900px) {
+	article {
+		margin:2% auto;
+		width: 96%;
+		float: none;
+	}
+
+	aside {
+		margin:2% auto;
+		width: 96%;
+		float: none;
+	}
+
 }
 
-.col50 {
-	margin: 0 2%;
-    width: 50%;
-    float: left;
-}*/
+@media only screen and (max-width: 700px) {
+	nav a {
+		margin:auto;
+		display: block;
+	}
+}
 
 
 
