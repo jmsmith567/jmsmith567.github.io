@@ -23,11 +23,12 @@
 		<a href="about.html">About PCC</a>
 	</nav>
 
+<!-- I think the problem I'm seeing with this hero image is that the height of the image is much smaller than the other images I've used so figcaption is breaking here much sooner than the other pages, around 627px screen width -->
 	<div class="clearfix">
 		<figure class="hero">
 			<div class="caption">
 				<img src="images/yarmouth2015-1.jpg" alt="Snow covered deck in the fog" title="Yarmouth Boat Launch">
-				<!-- <figcaption class="hero">"Yarmouth Boat Launch", Joanne Smith</figcaption> -->
+				<figcaption class="hero">"Yarmouth Boat Launch", Joanne Smith</figcaption>
 			</div>
 		</figure>
 	</div>
@@ -35,6 +36,15 @@
 	<section class="clearfix">
 		<article>
 			<h2>PCC Competitions</h2>
+
+			<div class="h-nav">
+				<a href="#scoring" class="h-nav">Scoring</a>	
+				<a href="#projected" class="h-nav">Projected Images</a>
+				<a href="#print" class="h-nav">Print Images</a>
+				<a href="#" class="h-nav">Galleries</a>
+				<a href="#" class="h-nav">Standings</a>
+			</div>
+
 			<p>Competitions are one of the club's major activities. They provide a way for members to learn and grow as photographers, as well as the opportunity to observe the work of fellow members. Participation in competitions is optional. Refer to the <a href="calendar.html">club calendar</a> for a complete listing of competition dates.</p>
 		</article>
 
@@ -43,16 +53,6 @@
 			<a href="#">&#62; Maine Photography Show</a>
 			<a href="#glennie">&#62; Glennie Nature Salon</a>
 		</aside>
-	</section>
-
-	<section class="clearfix">
-		<div class="horz-nav">
-			<a href="#scoring" class="horz-nav">Scoring</a>	
-			<a href="#projected" class="horz-nav">Projected Images</a>
-			<a href="#print" class="horz-nav">Print Images</a>
-			<a href="#" class="horz-nav">Galleries</a>
-			<a href="#" class="horz-nav">Standings</a>
-		</div>
 	</section>
 
 	<section class="clearfix">
@@ -86,6 +86,14 @@
 
 		<aside>
 			<h3>What Do Judges Look For?</h3>
+
+			<!-- I'm having trouble figuring out how to size images - I can't figure out where to apply the style and since all my images sizes are different, one change doesn't work for all images -->
+			<figure>
+				<div class="caption">
+					<img src="images/barharbor2015-3.jpg" alt="Bass Harbor Lighthouse" title="Bass Harbor Lighthouse 2015">
+					<figcaption>"Bass Harbor Lighthouse 2015", Joanne Smith</figcaption>
+				</div>
+			</figure>
 
 			<p>In club competitions, judges look for:</p>
 
@@ -139,7 +147,7 @@
 			</ul>
 			<br>
 
-			<h4>Questions</h4>
+			<h3>Questions</h3>
 
 			<p>If you have a question about Projected Image Competitions, please contact the Projected Image Competitions chair, <a href="#">Al Spencer: kaspencerjr@hotmail.com</a></p>
 
@@ -213,13 +221,6 @@
 			<ul>
 				<li>Song Titles (1/11/16)</li>
 			</ul>
-
-<!-- 			<figure>
-				<div class="caption">
-					<img src="images/barharbor2015-3.jpg" alt="Bass Harbor Lighthouse" title="Bass Harbor Lighthouse 2015">
-					<figcaption>"Bass Harbor Lighthouse 2015", Joanne Smith</figcaption>
-				</div>
-			</figure> -->
 		</aside>
 	</section>
 

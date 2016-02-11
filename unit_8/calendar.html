@@ -26,7 +26,7 @@
 		<figure class="hero">
 			<div class="caption">
 				<img src="images/boothbay2015-1.jpg" alt="Metal scultpture made up of circles" title="Bubbles">
-				<!-- <figcaption class="hero">"Bubbles", Joanne Smith</figcaption> -->
+				<figcaption class="hero">"Bubbles", Joanne Smith</figcaption>
 			</div>
 		</figure>
 	</div>
@@ -34,23 +34,26 @@
 	<section class="clearfix">
 		<main>
 			<article>
-				<h2>PCC Calendar of Events</h2>
+				<h2>2015-2016 Calendar of Events</h2>
 
-				<div class="cal-nav">
-					<a href="#" class="cal-nav">SEP</a>
-					<a href="#" class="cal-nav">OCT</a>
-					<a href="#" class="cal-nav">NOV</a>
-					<a href="#" class="cal-nav">DEC</a>
-					<a href="#" class="cal-nav">JAN</a>
-					<a href="#" class="cal-nav">FEB</a>
-					<a href="#march" class="cal-nav">MAR</a>
-					<a href="#april" class="cal-nav">APR</a>
-					<a href="#may" class="cal-nav">MAY</a>
+			<!-- I like the style of this nav but it breaks fairly easily - below 500px it keeps wrapping but I'm concerned that if I continue to shrink the padding between the links the touchpoints on mobile devices won't be easy to use  -->
+				<div class="h-nav">
+					<a class="h-nav-disab">SEP</a>
+					<a href="#" class="h-nav-disab">OCT</a>
+					<a href="#" class="h-nav-disab">NOV</a>
+					<a href="#" class="h-nav-disab">DEC</a>
+					<a href="#" class="h-nav-disab">JAN</a>
+				<!-- I'm not sure why these targets aren't jumping to exactly the spot where the id is located on the page - they land close but the content for the id isn't at the top of the viewport? -->
+					<a href="#february" class="h-nav">FEB</a>
+					<a href="#march" class="h-nav">MAR</a>
+					<a href="#april" class="h-nav">APR</a>
+					<a href="#may" class="h-nav">MAY</a>
 				</div>
 
-				<div>&nbsp;</div>
+				<!-- I found the css for this class online and I like the effect but I'm not sure why it's behaving the way it is - if you look at it with Inspect Element it's showing that this header is 430 pixels high and I can't seem to do anything to the top margin -->
+				<p id="march"><h3 class="inline-rule">FEBRUARY</h3></p>
 
-				<div class="date">
+				<div class="date" id="february">
 					<p><span class="bold">FEB</span><br>8</p>	
 				</div>
 
@@ -80,18 +83,19 @@
 					<p><span class="bold">FEB</span><br>29</p>	
 				</div>
 
+			<!-- I ran into a problem here with the alignment when there wasn't enough content in the event div. I fixed it by putting a min-height on divs with the class event. Just checking to see if fixed the actual problem or made it work but not in the way I should have -->
 				<div class="event">
 					<p><span class="bold">TBA</span></p>
 				</div>
 
-				<hr>
+				<p id="march"><h3 class="inline-rule">MARCH</h3></p>
 
-				<div class="date" id="march">
+				<div class="date">
 					<p><span class="bold">MAR</span><br>7</p>	
 				</div>
 
 				<div class="event">
-					<p><span class="bold">Projected Image Discussion &#38; Critique Night</span><br>Open discussion and critique led by <a href="#">Kathleen Clemons</a>. Members may submit one image. <a href="">Click here</a> for image submission info. Submission deadline is midnight on the Friday prior to the meeting.</p>
+					<p><span class="bold">Projected Image Discussion &#38; Critique Night</span><br>Open discussion and critique led by <a href="#">Kathleen Clemons</a>. Members may submit one image. <a href="#">Click here</a> for image submission info. Submission deadline is midnight on the Friday prior to the meeting.</p>
 
 					<p><span class="bold">Note:</span> tonight is the last night to bring in prints for next week's Print Competition. </p>
 				</div>
@@ -120,9 +124,9 @@
 					<p><span class="bold">Member Slide Shows</span><br>Submission guidelines will be posted</p>
 				</div>
 
-				<hr>
+				<p id="april"><h3 class="inline-rule">APRIL</h3></p>
 
-				<div class="date" id="april">
+				<div class="date">
 					<p><span class="bold">APR</span><br>4</p>	
 				</div>
 
@@ -160,9 +164,9 @@
 					<p><span class="bold">Guest Speaker</span><br>TBA</p>
 				</div>
 
-				<hr>
+				<p id="may"><h3 class="inline-rule">MAY</h3></p>
 
-				<div class="date" id="may">
+				<div class="date">
 					<p><span class="bold">MAY</span><br>2</p>	
 				</div>
 
@@ -193,6 +197,9 @@
 		<aside>
 			<h3>Meetings</h3>
 
+		<!-- I read about using flexbox to change the order of content with a media query but couldn't find examples I could understand - I can't decide if this info should come first for mobile e.g., will people scroll all the way to the bottom of the calendar to find out that meetings start at 7:00 etc?? -->
+
+		<!-- Why is the href here breaking to a new line but links in other paragraphs or divs don't? -->
 			<p>Meetings are held on Mondays <span class="bold">at 7:00</span> PM from September through May (excluding Labor Day and the last two Mondays in December) at the <a href="https://goo.gl/maps/u8i42uZdxbF2" target="_blank">Woodfords Club</a>, 179 Woodford Street in Portland. Ample parking is available.</p>
 
 			<p><span class="bold">Handicap access:</span><br>The main entrance of the Woodfords Club building includes a ramp with handicap access. The ramp and a number of handicap-only parking spaces are on the west side of the building, in between the Woodfords Club and the Jones-Rich-Hutchins Funeral Home.  Inside the Woodfords Club building, the main floor (including restrooms) is ADA-compliant.</p>

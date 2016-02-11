@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portland Camera Club - Home</title>
+	<title>Portland Camera Club - Portland, Maine - Home</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -13,6 +13,8 @@
 		<h4>Welcoming photography enthusiasts of all levels since 1899</h4>
 	</header>
 
+<!-- At about 815px screen width I switch from horizontal to vertical nav but I don't like the look of the big block for 5 links - I tried to find examples of the hamburger bun menu but couldn't find one I could understand... -->
+
 	<nav class="clearfix">
  	 	<a href="index.html" class="active">Home</a>
 		<a href="calendar.html">Calendar</a>
@@ -22,11 +24,12 @@
 		<a href="about.html">About PCC</a>
 	</nav>
 
+<!-- I'm using position:absolute and position:relative to place the caption on the hero image. It works pretty well until I get below a screen width of about 465 - it starts to appear below the image. I tried a media query to adjust the "top" attribute but instead of moving it up the height of it grows? -->
 	<div class="clearfix">
 		<figure class="hero">
 			<div class="caption">
 				<img src="images/barharbor2015-2.jpg" alt="Adirondack chairs on a deck" title="Table For Two">
-			<!-- 	<figcaption class="hero">"Table For Two", Joanne Smith</figcaption> -->
+				<figcaption class="hero">"Table For Two", Joanne Smith</figcaption>
 			</div>
 		</figure>
 	</div>
@@ -58,6 +61,7 @@
 
 	<section class="clearfix">
 		<article>
+		<!-- This h2 starts to wrap at about 1215px screen width - I'm not overly concerned about it but I'm curious about what kinds of things a developer might decide not to fix  -->
 			<h2>Member Profile: Joanne Smith</h2>
 
 			<div class="label">

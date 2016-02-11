@@ -132,11 +132,18 @@ section {
 	font-weight: 600;
 }
 
-.cal-nav {
-	padding: 0 1.7em 0 0;
+/*.cal-nav {
+	padding: 0 1em 0 0;
     width: 100%;
     color: #d13f32;
-}
+}*/
+
+/*.cal-nav-disab {
+	padding: 0 1em 0 0;
+    width: 100%;
+    color: #d13f32;
+    pointer-events: none;
+}*/
 
 .caption {
 	position:relative;
@@ -173,17 +180,17 @@ section {
     overflow: hidden;
 }
 
-.horz-nav {
-	padding: .2em .8em;
-	width: 100%;
-	background-color: #EBA600;
-	color: #FFF;
+.h-nav {
+	padding: 0 1em 1em 0;
+    width: 100%;
+    color: #d13f32;
 }
 
-.horz-nav-disab {
-	padding: .2em .5em;
-	pointer-events: none;
-	color: #999;
+.h-nav-disab {
+	padding: 0 1em 0 0;
+    width: 100%;
+    color: #CCC;
+    pointer-events: none;
 }
 
 .italic {
@@ -201,6 +208,7 @@ section {
 	width: 70%
 }
 
+/* Should I set a mininum width for the page and if yes, where would I set it?*/
 #wrapper {
 	 width: 100%;
 }
@@ -228,13 +236,20 @@ h1 {
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 2.25em;
 	font-weight:400;
 }
 
 h3 {
 	font-size: 1.5em;
 	font-weight:400;
+}
+
+h3.inline-rule {
+    width: 100%;
+    border-bottom: .05em solid #1D7872;
+    line-height: 0.4em;
+    margin: 1em 0 .5em;
 }
 
 h2, h3, h4 {
@@ -276,6 +291,9 @@ li.calendar {
 }
 
 @media only screen and (max-width: 1040px) {
+	section {
+    	padding-bottom:1em;
+    }
 	article {
 		margin:2% auto;
 		width: 96%;
@@ -323,11 +341,24 @@ li.calendar {
 	text-align: center;
 	}
 
+	h2 {
+		font-size: 1.75em;
+	}
+
 	header h4 {
 	display: none;
 	}
 }
 
+@media only screen and (min-width: 320) and (max-width: 520) {
+	.date {
+		width: 15%;
+	}
+
+	.event {
+		width: 85%
+	}
+}
 
 
 
