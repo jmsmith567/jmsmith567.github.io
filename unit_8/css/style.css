@@ -16,7 +16,6 @@
 }
 
 body {
-	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -24,46 +23,27 @@ body {
 
 article {
     margin: 2%;
-    width: 54%;
+    width: 50%;
     float: left;
 }
 
 aside {
     margin: 2%;
     padding: 1em;
-    width: 38%;
-    background-color: #DEDBA7;
+    width: 40%;
+    background-color: #F2EFDC;
     color: #1A212C;
     float: left;
 }
 
-aside h2 {
-	color: #1A212C;
-}
-
-aside h3 {
-	color: #1A212C;
-}
-
-
-aside a {
-    color: #D13F32;
-    display: block;
-}
-
-aside a:hover {
-    color: #1D7872;
-    display: block;
-}
-
 figure {
-	float: left;
+	position: relative;
 }
 
 figcaption {
 	padding: .5em;
-	background-color:rgba(0,0,0,.50);
-	color: #FFF;
+	background-color:rgba(0,0,0,.40);
+	color: #CCC;
 	font-size: .75em;
 	position:absolute;
 	top:0;
@@ -71,7 +51,8 @@ figcaption {
 }
 
 figcaption.hero {
-	top:30em;
+	top: 32em;
+    left: 0em;
 }
 
 footer {
@@ -83,39 +64,44 @@ footer {
 	text-align: center;
 }
 
+footer p {
+	width: 50em;
+	margin:auto;
+}
+
 header {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
-    background: #1A212C;
+    background: #363636;
 }
 
 header h1 {
 	font-size: 3.5em;
-	color: #1D7872;
+	color: #F2EFDC;
 }
 
 header h4 {
 	font-style: italic;
 	font-size: 1em;
 	letter-spacing: 0.15em;
-	color: #71B095;
+	color: #B8B5A7;
 }
 
 nav {
-	padding: .1em 1em;
-	background-color: #1D7872;
+	padding: .75em 2em;
+	background-color: #037E8C;
 	text-align: center;
 }
 
 nav a {
-	padding: .1em 1em;
-	color: #1A212C;
+	padding: .1em 2em;
+	color: #024959;
 	text-decoration: none;
 }
 
 nav a:hover {
-	color: #71B095;
+	color: #04A5B8;
 }
 
 section {
@@ -124,29 +110,12 @@ section {
 }
 
 .active {
-	padding: .1em 1em;
-	color: #FFF;
+	padding: .1em 2em;
+	color: #CCC;
 }
 
 .bold {
 	font-weight: 600;
-}
-
-/*.cal-nav {
-	padding: 0 1em 0 0;
-    width: 100%;
-    color: #d13f32;
-}*/
-
-/*.cal-nav-disab {
-	padding: 0 1em 0 0;
-    width: 100%;
-    color: #d13f32;
-    pointer-events: none;
-}*/
-
-.caption {
-	position:relative;
 }
 
 .clearfix:after {
@@ -164,7 +133,8 @@ section {
 	height: 3.3em;
 	text-align: center;
 	font-weight: 300;
-	background-color: #71B095;
+	background-color: #037E8C;
+	color: #FFF;
 	border-radius: 15%;
 	float: left;
 }
@@ -176,7 +146,7 @@ section {
 }
 
 .hero {
-	height: 24em;
+	height: 26em;
     overflow: hidden;
 }
 
@@ -203,40 +173,41 @@ section {
     float: left;
 }
 
+.new-line {
+	display: block;
+}
+
 .value {
 	float: left;
 	width: 70%
 }
 
-/* Should I set a mininum width for the page and if yes, where would I set it?*/
 #wrapper {
-	 width: 100%;
+	 max-width: 1300px;
+	 margin:auto;
+
 }
 
 a {
 	text-decoration: none;
-	color: #D13F32;
+	font-weight: 600;
+	color: #E74C30;
 }
-
-a.bluebg {
-	color: #ACF0F2;
-}
-
 
 a:hover {
-	color: #1D7872;
+	color: #037E8C;
 }
 
-div.event {
+/*div.event {
 	min-height: 5em;
-}
+}*/
 
 h1 {
 	font-family: 'Merriweather', serif;
 }
 
 h2 {
-	font-size: 2.25em;
+	font-size: 2em;
 	font-weight:400;
 }
 
@@ -252,9 +223,9 @@ h3.inline-rule {
     margin: 1em 0 .5em;
 }
 
-h2, h3, h4 {
+h2, h3 {
 	padding-bottom: .50em;
-	color: #1D7872;
+	color: #024959;
 }
 
 hr {

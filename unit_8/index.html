@@ -8,15 +8,12 @@
 <body>
 
 <div id="wrapper">
-	<header class="clearfix">
-		<h1>Portland Camera Club</h1>
-		<h4>Welcoming photography enthusiasts of all levels since 1899</h4>
+	<header>
+		<a href="index.html"><h1>Portland Camera Club</h1>
+		<h4>Welcoming photography enthusiasts of all levels since 1899</h4></a>
 	</header>
 
-<!-- At about 815px screen width I switch from horizontal to vertical nav but I don't like the look of the big block for 5 links - I tried to find examples of the hamburger bun menu but couldn't find one I could understand... -->
-
-	<nav class="clearfix">
- 	 	<a href="index.html" class="active">Home</a>
+	<nav>
 		<a href="calendar.html">Calendar</a>
 		<a href="competitions.html">Competitions</a>
 		<a href="#">Member Galleries</a>
@@ -24,17 +21,20 @@
 		<a href="about.html">About PCC</a>
 	</nav>
 
-<!-- I'm using position:absolute and position:relative to place the caption on the hero image. It works pretty well until I get below a screen width of about 465 - it starts to appear below the image. I tried a media query to adjust the "top" attribute but instead of moving it up the height of it grows? -->
-	<div class="clearfix">
-		<figure class="hero">
-			<div class="caption">
-				<img src="images/barharbor2015-2.jpg" alt="Adirondack chairs on a deck" title="Table For Two">
-				<figcaption class="hero">"Table For Two", Joanne Smith</figcaption>
-			</div>
-		</figure>
-	</div>
+	<figure class="hero">
+			<img src="images/barharbor2015-2.jpg" alt="Adirondack chairs on a deck" title="Table For Two">
+			<figcaption class="hero">"Table For Two", Joanne Smith</figcaption>
+	</figure>
 
 	<section class="clearfix">
+		<aside>
+			<h3>What's Happening at PCC</h3>
+
+			<p><span class="bold">Mon Feb 8 - 7:00 PM<br>Print Discussion &#38; Critique Night</span><br>Open discussion and critique. Bring your print to the meeting.</p>
+
+			<p><a href="calendar.html">&#62; View full club calendar</a></p>
+		</aside>
+
 		<main>	
 			<article>
 				<h2>Become A Member</h2>
@@ -46,23 +46,14 @@
 				<p><a href="about.html"> &#62; More Info</a></p>
 			</article>
 		</main>
-
-		<aside>
-			<h3>What's Happening at PCC</h3>
-
-			<p><span class="bold">Mon Feb 8 - 7:00 PM<br>Print Discussion &#38; Critique Night</span><br>Open discussion and critique. Bring your print to the meeting.</p>
-
-			<p><a href="calendar.html">&#62; View full club calendar</a></p>
-			
-		</aside>
 	</section>
 
 	<hr>
 
 	<section class="clearfix">
 		<article>
-		<!-- This h2 starts to wrap at about 1215px screen width - I'm not overly concerned about it but I'm curious about what kinds of things a developer might decide not to fix  -->
-			<h2>Member Profile: Joanne Smith</h2>
+			<h2><span class="new-line">Member Profile:</span>
+			<span class="new-line">Joanne Smith</span></h2>
 
 			<div class="label">
 			<p>Located in:</p>
