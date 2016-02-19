@@ -159,6 +159,10 @@ section {
     color: #d13f32;
 }
 
+.italic {
+	font-style: italic;
+}
+
 .label {
     width: 30%;
     font-weight: 700;
