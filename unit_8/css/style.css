@@ -25,7 +25,6 @@ body {
 
 article {
     margin: 2%;
-    /*border:1px solid;*/
     width: 57%;
     float: left;
 }
@@ -144,6 +143,7 @@ section {
 
 .event {
 	padding-left: 1.5em;
+	min-height: 5em;
 	float: left;
 	width: 90%
 }
@@ -159,25 +159,10 @@ section {
     color: #d13f32;
 }
 
-.h-nav-disab {
-	padding: 0 1em 0 0;
-    width: 100%;
-    color: #CCC;
-    pointer-events: none;
-}
-
-/*.italic {
-	font-style: italic;
-}*/
-
 .label {
     width: 30%;
     font-weight: 700;
     float: left;
-}
-
-.new-line {
-	display: block;
 }
 
 .value {
@@ -204,10 +189,6 @@ a:hover {
 	color: #037E8C;
 }
 
-/*div.event {
-	min-height: 5em;
-}*/
-
 h2, h3 {
 	padding-bottom: .50em;
 	color: #024959;
@@ -223,7 +204,7 @@ h3 {
 	font-weight:400;
 }
 
-h3.block-rule {
+h3.month {
     width: 100%;
     border-bottom: .05em solid #024959;
     line-height: 0.4em;
@@ -240,9 +221,9 @@ img {
 	width: 100%;
 }
 
-label{
+label {
   display:none;
- /* padding:20px 0 20px 20px;*/
+  padding:1em 0;
 }
 
 p {
@@ -254,6 +235,10 @@ ul, ol {
 	padding-left: 2em;
     padding-bottom: 1em;
     text-indent: 0;
+}
+
+li.nested {
+	list-style: none;
 }
 
 li {
@@ -273,6 +258,10 @@ li {
 		width: 95%;
 		float: none;
 		clear: both;
+	}
+
+	aside.hidden {
+		display: none;
 	}
 
 	figure {
@@ -297,14 +286,15 @@ li {
 
 	nav a { 
     	display:block;
+    	padding: .25em 2em;
+
   	}
 
   	img {
-  		width: 2em;
+  		width: 2.5em;
   	}
 
   	label {
-  		padding-bottom: 1em;
     	display:block;
     	margin: auto;
     	/*float: right;*/
@@ -324,8 +314,6 @@ li {
 	header h1 {
 	font-size: 1.75em;
 	padding-bottom: .75em;
-	/*color: #1D7872;*/
-	/*text-align: center;*/
 	}
 
 	h2 {
@@ -350,7 +338,7 @@ li {
 		width: 85%
 	}
 }
-*/
+
 
 
 
