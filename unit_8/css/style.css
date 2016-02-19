@@ -227,7 +227,7 @@ img {
 
 label{
   display:none;
-  padding:1em 0;
+  /*padding:1em 0;*/
 }
 
 p {
@@ -294,14 +294,16 @@ li {
 
   	}
 
-  	img {
-  		width: 2.5em;
-  	}
-
   	label {
     	display:block;
-    	margin: auto;
-    	/*float: right;*/
+   		width: 100%;
+   		background-color: #037E8C;
+ 	 }
+
+ 	 label img {
+ 	 	display:block;
+ 	 	margin: auto;
+ 	 	width: 50px;
  	 }
 
   	#toggle:checked + nav {
