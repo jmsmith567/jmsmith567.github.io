@@ -8,18 +8,21 @@
 <body>
 
 <div id="wrapper">
-	<header>
+	<header class="clearfix">
 		<a href="index.html"><h1>Portland Camera Club</h1>
 		<h4 class="tagline">Welcoming photography enthusiasts of all levels since 1899</h4></a>
-	</header>
 
-	<nav>
-		<a href="calendar.html" class="active">Calendar</a>
-		<a href="competitions.html">Competitions</a>
-		<a href="#">Member Galleries</a>
-		<a href="#">Member Forums</a>
-		<a href="about.html">About PCC</a>
-	</nav>
+		<label for="toggle"><img src="images/menu.png" alt="menu" title="menu"></label>
+  		<input type="checkbox" id="toggle">
+
+  		<nav>
+			<a href="calendar.html" class="active">Calendar</a>
+			<a href="competitions.html">Competitions</a>
+<!-- 			<a href="#">Member Galleries</a>
+			<a href="#">Member Forums</a> -->
+			<a href="about.html">About PCC</a>
+		</nav>
+	</header>
 
 
 	<figure class="hero">
@@ -29,7 +32,7 @@
 
 	<section class="clearfix">
 		<aside>
-			<h3>Meetings</h3>
+			<h2>Meetings</h2>
 				<p>Meetings are held on Mondays <span class="bold">at 7:00</span> PM from September through May (excluding Labor Day and the last two Mondays in December) at the <a href="https://goo.gl/maps/u8i42uZdxbF2" target="_blank">Woodfords Club</a>, 179 Woodford Street in Portland. Ample parking is available.</p>
 
 				<p><span class="bold">Handicap access:</span><br>The main entrance of the Woodfords Club building includes a ramp with handicap access. The ramp and a number of handicap-only parking spaces are on the west side of the building, in between the Woodfords Club and the Jones-Rich-Hutchins Funeral Home.  Inside the Woodfords Club building, the main floor (including restrooms) is ADA-compliant.</p>
@@ -41,7 +44,7 @@
 			<article>
 				<h2>2015-2016 Calendar of Events</h2>
 
-				<div class="h-nav">
+				<!-- <div class="h-nav">
 					<a class="h-nav-disab">SEP</a>
 					<a href="#" class="h-nav-disab">OCT</a>
 					<a href="#" class="h-nav-disab">NOV</a>
@@ -51,10 +54,10 @@
 					<a href="#march" class="h-nav">MAR</a>
 					<a href="#april" class="h-nav">APR</a>
 					<a href="#may" class="h-nav">MAY</a>
-				</div>
+				</div> -->
 
 				<div id="february">
-					<h3 class="inline-rule">FEBRUARY</h3>
+					<h3 class="block-rule">FEBRUARY</h3>
 
 					<div class="date">
 						<p><span class="bold">FEB</span><br>8</p>	
@@ -93,7 +96,7 @@
 
 				<div id="march">
 
-					<h3 class="inline-rule">MARCH</h3>
+					<h3 class="block-rule">MARCH</h3>
 
 					<div class="date">
 						<p><span class="bold">MAR</span><br>7</p>	
@@ -131,7 +134,7 @@
 
 				</div>
 
-				<!-- <p id="april"><h3 class="inline-rule">APRIL</h3></p>
+				<p id="april"><h3 class="block-rule">APRIL</h3></p>
 
 				<div class="date">
 					<p><span class="bold">APR</span><br>4</p>	
@@ -171,7 +174,7 @@
 					<p><span class="bold">Guest Speaker</span><br>TBA</p>
 				</div>
 
-				<p id="may"><h3 class="inline-rule">MAY</h3></p>
+				<p id="may"><h3 class="block-rule">MAY</h3></p>
 
 				<div class="date">
 					<p><span class="bold">MAY</span><br>2</p>	
@@ -197,7 +200,7 @@
 
 				<div class="event">
 					<p><span class="bold">Annual Camera Club Banquet</span></p>
-				</div> -->
+				</div>
 			</article>
 		</main>	
 	</section>
